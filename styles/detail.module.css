@@ -1,0 +1,70 @@
+
+.main{
+  padding: 5rem 0.5em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backlink {
+    position: fixed;
+    top:10px;
+    left:10px;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.detail {
+  padding: 1.0em;
+  background-color: white;
+  border-radius: 5px;
+  width: 600px;
+}
+
+.title {
+ text-align: center;
+}
+
+.inner .image {
+  text-align: center;
+}
+
+.inner .movie {
+  text-align: center;
+}
+
+.inner .movie video{
+  text-align: center;
+  width: 100%;
+}
+
+.inner img{
+  width: 100%;
+  max-width: 480px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding:10px 15px;
+  }
+
+ .detail {
+  padding:10px 15px;
+  width: auto;
+ }
+ 
+ .inner {
+   padding:10px 10px;
+
+ }
+
+ .inner h2{
+    font-size: 1.0em;
+ }
+
+
+}
