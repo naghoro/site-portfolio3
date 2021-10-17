@@ -12,6 +12,7 @@
 /.next/
 /out/
 cp.sh
+/public/
 
 # production
 /build
