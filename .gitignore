@@ -12,7 +12,7 @@
 /.next/
 /out/
 cp.sh
-/public/
+/public/xr-portfolio/movie
 
 # production
 /build
