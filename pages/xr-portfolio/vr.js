@@ -27,57 +27,64 @@ export default function Home() {
               VRについて
             </h1>
 
-            <nav>
-              <a>VRChat用アバターの作成</a>
-              <a>VRChat用自動で追いかけるスポットライトの作成</a>
-              <a>Oculus QuestでVRMを動かす</a>
+            <nav className={detailstyles.nav}>
+              <a href="#tanuki">VRChat用アバターの作成</a>
+              <a href="#spot">VRChat用自動で追いかけるスポットライトの作成</a>
+              <a href="#oculus">Oculus QuestでVRMを動かす</a>
             </nav>
 
-            <h2>VRChat用アバターの作成</h2>
+            <h2 id="tanuki">VRChat用アバターの作成</h2>
 
-            VRChatで使えるたぬきアバターを作りました。
-            モデリングはBlenderを使い、UnityでVRChatにアップロードします。Shape Keyで口が開く、ダイナミックボーンで尻尾が揺れるところまで設定しました。<br />
+            VRChatで使えるたぬきアバターを作りました。<br />
+            モデリングはBlenderを使い、Shape Keysで口が開くようにしました。また、Unityでダイナミックボーンを使って尻尾が揺れるようにしました。<br />
             <br />
             <div className={detailstyles.image}>
               <img src="/xr-portfolio/image/naghoroS.png" />
             </div>
             <br />
-            初めての本格的なモデリングで、「ワニでも分かる」と「美少女...」を参考にさせて頂いて作りました。
-            <br />
-            <br />
 
-            次にモデリングする時は以下のことを気を付けたいです。
+            次にモデリングする時は以下のように作ってみようと思います。
             <ul>
-              <li>メッシュは、最初は荒めに切っていく</li>
-              <li>服のボーンのウェイトは、する。今回は体は削った。</li>
+              <li>メッシュは、最初は荒めに切っていく。</li>
+              <li>服のボーンのウェイトは、ウェイト転送する。</li>
             </ul>
 
-            <br />
-            ※たぬきみたいな人生がいいなと思っていたので、その人生はVR上で実現しました。<br />
-            　この姿のおかげで、少しVRに入り易くなって良かったと思っています。
+            ※たぬきみたいな人生っていいなと思っていたので、VR上で実現しました。<br />
 
-            <h2>VRChat用自動で追いかけるスポットライトの作成</h2>
-
+            <h2>VRChat用自動で追いかけるピンスポの作成</h2>
             Udon# を使って作りました。
-            ユーザーのIDを取る。ユーザーの位置を取得する。スポットライトの向きをユーザーの位置に向ける。
-            <br />
-            <br />
 
-            ※Virtual Marketでギミックに当選したことをきっかけに作りました。<br />
-            　昔演劇をやっていたことがあったので、VR上に演劇をどう表現できるか考えている思いもあります。
+            <div>
+              <br />
+              <br />
+              TODO: 動画を取って載せる
+              <br />
+              <br />
+              <br />
+            </div>
+
+            以下のSTEPで動作しています。
+            <ul>
+              <li>ユーザーのIDを取る。</li>
+              <li>IDからユーザーの位置を取得する。</li>
+              <li>スポットライトの向きをユーザーの位置に向ける。</li>
+            </ul>
+
+            ※Vket Mallでギミックに当選したことをきっかけに作りました。<br />
+            昔演劇をやっていたことがあったので、「VRでは誰かがライトを操作する必要が無い」のは面白いと感じました。
 
             <h2>Oculus QuestでVRMを動かす</h2>
 
-            やっていることはシンプルなのですが、VRMを読み込み、アニメーションとしてUnity Chanのものを使わせてもらっただけのものです。
+            VRMを読み込み、アニメーションとしてUnity Chanを使わせて貰いOculusQuest上で動かしました。
             <br />
             <br />
 
             <div className={detailstyles.movie}>
-              <video src="/xr-portfolio/movie/jp.naghoro.OculusAvatar-20210818-220442_Trim.mp4" controls></video>
+              <video src="/xr-portfolio/movie/jp.naghoro.OculusAvatar-20210818-220442_Trim.mp4" poster="/xr-portfolio/image/vrposter1.png" controls></video>
             </div>
             <br />
 
-            ※Oculus Quest2を買ったので、アプリの作り方を試してみたい。VRMって良く聞くけど何なのか知りたいという気持ちで作りました。
+            ※adbがAndroidStudioのものと競合してはまりました。
           </div>
 
         </section>
